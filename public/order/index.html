@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<![endif]-->
+<head>
+<link rel="stylesheet" href="http://necolas.github.io/normalize.css/2.1.3/normalize.css">
+<link rel="stylesheet" href="css/jquery.idealforms.css">
+<meta charset=utf-8 />
+<style>
+body {
+max-width: 980px;
+margin: 2em auto;
+font: normal 15px/1.5 Arial, sans-serif;
+color: #353535;
+overflow-y: scroll;
+}
+.content {
+margin: 0 30px;
+}
+.field.buttons button {
+margin-right: .5em;
+}
+#invalid {
+display: none;
+float: left;
+width: 290px;
+margin-left: 120px;
+margin-top: .5em;
+color: #CC2A18;
+font-size: 130%;
+font-weight: bold;
+}
+.idealforms.adaptive #invalid {
+margin-left: 0 !important;
+}
+.idealforms.adaptive .field.buttons label {
+height: 0;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<div class="idealsteps-container">
+<nav class="idealsteps-nav"></nav>
+<form action="index.html" novalidate autocomplete="off" class="idealforms">
+<div class="idealsteps-wrap"> 
+
+<!-- Step 1 -->
+
+<section class="idealsteps-step">
+<h1 style="margin-top:10px;" align="center">Choose your product</h1>
+<div class="field">
+<label class="main">Product:</label>
+<select name="options" id="">
+<option value="default">&ndash; Select a product &ndash;</option>
+<option value="default">&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash; SHIPPING METHOD &ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;</option>
+<option value="1">Normal Post (10-20 days) - $25</option>
+<option value="1">Fast Courier (2-5 days) - $50</option>
+<option value="default">&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash; ELECTRONICS &ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;</option>
+<option value="1">Complete Infusion X6 - $900 (Offer)</option>
+<option value="1">Complete Infusion X6 + Booster - $1050</option>
+<option value="1">Complete Infusion X6 + Extra 100 cards - $1050</option>
+<option value="default">&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash; PLASTIC CC &ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;&ndash;</option>
+<option value="1">Plastic CC ($3500+ CREDIT) - $420</option>
+<option value="3">Plastic CC ($5000+ CREDIT) - $600</option>
+<option value="4">Plastic CC ($10k+ CREDIT) - $1200</option>
+<option value="7">Plastic CC ($22k+ CREDIT) - $2600</option>
+</select>
+<span class="error"></span> </div>
+<div class="field buttons">
+<label class="main">&nbsp;</label>
+<button type="button" class="next">Next &raquo;</button>
+</div>
+</section>
+
+<!-- Step 2 -->
+
+<section class="idealsteps-step">
+<h1 style="margin-top:10px;" align="center">Delivery details</h1>
+<center>
+<img src="img/encrypted-data.png" alt="Encrypted Data" style="margin-top:-30px;"><font color="red"><strong> Data collected on this form will be encrypted once submitted.</strong></font>
+<br><font color="red"><strong>NOTE: If you're purchasing digital products, enter your email ONLY.</strong></font>
+</center>
+<br>
+<br>
+<div class="field">
+<label class="main">Name:</label>
+<input name="zip" type="text" placeholder="Enter your name here">
+<span class="error"></span> </div>
+<div class="field">
+<label class="main">Email:</label>
+<input name="zip" type="text" placeholder="Enter your email here">
+<span class="error"></span> </div>
+<div class="field">
+<label class="main">Address line:</label>
+<input name="zip" type="text" placeholder="Enter your address here">
+<span class="error"></span> </div>
+<div class="field">
+<label class="main">Zip/Post code:</label>
+<input name="zip" type="text" placeholder="Enter your zip code here">
+<span class="error"></span> </div>
+<div class="field">
+<label class="main">Country:</label>
+<input name="zip" type="text" placeholder="Enter your country here (i.e Germany)">
+<span class="error"></span> </div>
+<div class="field">
+<label class="main">Comments:</label>
+<textarea name="comment" cols="10" rows="3"></textarea></div>
+<div class="field buttons">
+<label class="main">&nbsp;</label>
+<button type="button" class="prev">&laquo; Prev</button>
+<button type="button" class="next">Next &raquo;</button>
+</div>
+</section>
+
+<!-- Step 3 -->
+
+<section class="idealsteps-step">
+<center>
+<h3><a><font color="CD1F25"><b>Please use the Bitcoin converter in order to know how much to pay in Bitcoins.</b></font></a></h3>
+<script src="js/bitcoin-converter.js"></script>
+<script type="text/javascript">
+MiningProfitConverter.draw();
+</script>
+</center>
+<h1 style="margin-top:10px;" align="center">Complete payment</h1>
+<h3 style="margin-top:-40px;" align="center">Payment with Bitcoin only</h3>
+<div class="field">
+<label class="main">&nbsp;</label><label class="main">&nbsp;</label><label class="main">&nbsp;</label>
+<label class="main">Phone Scan:
+<br>
+<br><img src="img/bitcoin.png" alt="Bitcoin Wallet" style="margin-top:-10px;"></label></div>
+<div class="field">
+<label class="main">&nbsp;</label><label class="main">&nbsp;</label><label class="main">&nbsp;</label>
+<label class="main">Bitcoin Address: <h4 style="margin-top:-2px;">16fWk7ZBZmo5AUg2mXe6bRXRAsX87D4ejW</h4></label></div>
+<div class="field buttons">
+<label class="main">&nbsp;</label><label class="main">&nbsp;</label>
+<label class="main">&nbsp;</label>
+<button type="button" class="prev">&laquo; Prev</button>
+<button type="button" class="next">Next &raquo;</button>
+</div>
+</section>
+
+<!-- Step 4 -->
+
+<section class="idealsteps-step">
+<h1 style="margin-top:50px;" align="center">Have you completed the payment?</h1>
+<center>If you haven't yet completed the payment, please go to the previous page.
+<br>The payment will be manually checked before dispatching the product.</center>
+<br>
+<br>
+<div class="field buttons">
+<label class="main">&nbsp;</label><label class="main">&nbsp;</label>
+<button type="button" class="prev">&laquo; No, back</button>
+<a href='processing.html'  class='button'>Yes, complete</a>
+</div>
+</section>
+</div>
+<span id="invalid"></span>
+</form>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+<script src="js/out/jquery.idealforms.js"></script> 
+<!--<script src="js/out/jquery.idealforms.min.js"></script>--> 
+<script>
+
+    $('form.idealforms').idealforms({
+
+      silentLoad: false,
+
+      rules: {
+        'username': 'required username ajax',
+        'email': 'required email',
+        'password': 'required pass',
+        'confirmpass': 'required equalto:password',
+        'date': 'required date',
+        'picture': 'required extension:jpg:png',
+        'website': 'url',
+        'hobbies[]': 'minoption:2 maxoption:3',
+        'phone': 'required phone',
+        'zip': 'required zip',
+        'options': 'select:default',
+      },
+
+      errors: {
+        'username': {
+          ajaxError: 'Username not available'
+        }
+      },
+
+      onSubmit: function(invalid, e) {
+        e.preventDefault();
+        $('#invalid')
+          .show()
+          .toggleClass('valid', ! invalid)
+          .text(invalid ? (invalid +' invalid fields') : 'All good!');
+      }
+    });
+
+
+
+    $('form.idealforms').find('input, select, textarea').on('change keyup', function() {
+      $('#invalid').hide();
+    });
+
+    $('form.idealforms').idealforms('addRules', {
+      'comments': 'required minmax:50:200'
+    });
+
+    $('.prev').click(function(){
+      $('.prev').show();
+      $('form.idealforms').idealforms('prevStep');
+    });
+    $('.next').click(function(){
+      $('.next').show();
+      $('form.idealforms').idealforms('nextStep');
+    });
+
+  </script>
+</body>
+</html>

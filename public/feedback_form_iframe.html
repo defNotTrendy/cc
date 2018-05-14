@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/feedback.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+<div class="container">  
+  <form id="contact" action="feedback_form_iframe.html" method="post">
+    <h3>Submit your feedback</h3>
+	<br>
+    <fieldset>
+      <input placeholder="Name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your BTC Transaction Hash (i.e 85f93ce2a98522db6f090b956724b18dab9f8af79b9b02f29e4ea01fdc889a754" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Feedback Here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" onclick="location.href='verifying_feedback.html'">Verify</button>
+    </fieldset>
+  </form>
+ 
+  
+</div>
+</body>
