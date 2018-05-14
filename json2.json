@@ -1,0 +1,36 @@
+{
+  "rules": {
+    "sales": {
+      ".read": false,
+      ".write": false
+    },
+    "products": {
+      ".read": true,
+      ".write": false
+    },
+          "users": {
+            "name": {
+              ".read": true,
+              ".write": false
+            },
+            "password": {
+              ".read": false
+            },
+            "email": {
+              ".read": false
+            },
+            "contact": {
+              ".read": false
+            },
+            "delivery address": {
+              ".read": false
+            },
+            "country": {
+              ".read": true
+            },
+            "membersince": {
+              ".read": true
+            }
+          }
+        }
+      }

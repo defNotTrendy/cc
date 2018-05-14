@@ -1,4 +1,13 @@
 //## NodeJS Firebase ATTEMPT to FUNCTION.
+firebase.initializeApp({
+    "apiKey": "AIzaSyAVsA_uv5vpLJxm31sdnuiOVP06-vWITv8",
+    "databaseURL": "https://legitzccz.firebaseio.com",
+    "storageBucket": "legitzccz.appspot.com",
+    "authDomain": "legitzccz.firebaseapp.com",
+    "messagingSenderId": "773861291615",
+    "projectId": "legitzccz"
+});
+///
 
 var admin = require('firebase-admin');
 var serviceAccount = require('path/to/serviceAccountKey.json');
